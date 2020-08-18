@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<body>
+    <input type="number" id ="a"> 
+    <input type="number" id ="b"> 
+    <br> <br>
+    <button onclick="sumOf('plus')" id = "plus"> + </button>
+    <button onclick="sumOf('minus')" id = "minus" value="minus"> - </button>
+    <button onclick="sumOf('times')" id = "times" value=""> * </button>
+    <button onclick="sumOf('devidedBy')" id = "devidedBy"> / </button>
+<p id="print"> </p>
+<p id = printy> </p>
+
+
+<script>
+//     let resultOfA =  parseInt(document.getElementById("a"));
+
+function sumOf(operator){
+    let resultOfA =  document.getElementById("a");
+    let resultOfB =  document.getElementById("b");
+    let a = parseInt(resultOfA.value);
+    let b = parseInt(resultOfB.value);
+    let printField = document.getElementById("print");
+    
+
+if(operator == 'plus'){
+    printField.innerText = a + b;
+
+} else if (operator == 'minus'){
+    printField.innerText = a - b;
+
+} 
+
+else if(operator == 'times'){
+    printField.innerText = a * b;
+
+} else if ('devidedBy'){
+    printField.innerText = a / b;
+
+} 
+
+}
+
+
+    /*
+printField.innerText = a + b;
+    console.log(a + b);
+*/
+
+</script>
+
+</body>
+</html>
+
+<!-- // ES5
+var x = function(x, y) {
+  return x * y;
+}
+
+// ES6
+const x = (x, y) => x * y;
+-->
