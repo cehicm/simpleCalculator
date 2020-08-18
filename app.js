@@ -8,5 +8,5 @@ function sumOf(param){
     : (param = 'minus') ? print.innerText = num1 - num2
     : (param = 'times') ?  print.innerText = num1 * num2
     : (param = 'devidedBy')?  print.innerText = num1 / num2
-    : console.log('bad');
+    : console.log('bad input');
 }
