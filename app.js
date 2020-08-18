@@ -4,14 +4,9 @@ function sumOf(param){
     
     let print = document.getElementById("results")
 
-
-if(param == 'plus'){
-    print.innerHTML = num1 + num2; // stil works
-} else if (param == 'minus'){
-    print.innerText = num1 - num2;
-} else if (param == 'times'){
-    print.innerText = num1 * num2;
-} else if( param == 'devidedBy'){
-    print.innerText = num1 / num2;
-} 
+    (param == 'plus') ? print.innerHTML = num1 + num2
+    : (param = 'minus') ? print.innerText = num1 - num2
+    : (param = 'times') ?  print.innerText = num1 * num2
+    : (param = 'devidedBy')?  print.innerText = num1 / num2
+    : console.log('bad');
 }
